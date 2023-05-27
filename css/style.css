@@ -1,0 +1,204 @@
+/* Reset browser default behaviour */
+* {
+  margin: 0;
+  padding: 0;
+}
+.carts-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+}
+
+.header-section {
+  background: rgba(16, 144, 216, 0.15);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.blog-button button {
+  background: #1090d8;
+  color: #ffffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* Cart style code  */
+.carts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 70%;
+  padding-bottom: 30px;
+}
+
+.cart {
+  background: #ffffff;
+  width: 270px;
+  height: 380px;
+  text-align: center;
+  padding: 30px 10px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  cursor: pointer;
+}
+
+.cart img {
+  padding-bottom: 44px;
+  width: 70%;
+  height: 40%;
+}
+
+.cart h2 {
+  padding-bottom: 20px;
+}
+
+.cart input {
+  width: 40px;
+  border: none;
+  background: #e7dfdf;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 10px 0;
+  margin-left: 0;
+}
+
+.cart button.calculate-btn {
+  background: #1090d8;
+  border: none;
+  padding: 8px 20px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 17px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 90%;
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+}
+
+main {
+  display: flex;
+  padding-top: 50px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.area-heading {
+  text-decoration: underline;
+}
+
+main .area-calculation {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  height: 380px;
+  width: 350px;
+}
+
+table tr td {
+  padding: 2px;
+  color: gray;
+}
+
+table tr td button {
+  background: #1090d8;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 5px;
+  color: #ffffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+table tr td button:hover {
+  background: #0469a3;
+}
+
+/* Inputed Data Displayer */
+.inputed-data-display span,
+button {
+  margin: 0 5px;
+}
+
+.inputed-data-display i {
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+/* Check Box Style  */
+.square {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  background: #0469a3;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  right: 30px;
+  bottom: 90px;
+}
+
+.fa-check {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  color: white;
+  background: #0469a3;
+  padding: 5px 6px;
+}
+/* Delete icon style  */
+.fa-trash-can {
+  color: red;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Custom Popup Style  */
+/* .wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 250, 245, 0.329);
+    z-index: 1;
+    top: 0;
+    display: none;
+}
+.wrapper div.popup{
+    background: rgb(223, 211, 211);
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: ridge 1px gray;
+}
+
+.wrapper div.popup .buttons-container{
+  border: 1px solid tan;
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  width: 50%;
+}
+
+.wrapper div.popup .buttons-container button{
+    background: rgb(194, 136, 11);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+.stopScrolling{
+    width: 100%;
+    overflow: hidden;
+} */

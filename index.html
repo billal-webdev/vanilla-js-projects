@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genious Calculation</title>
+    <!-- Fontawesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <!-- <div>
+        <button id="alert-button">Click to alert</button>
+    </div> -->
+    <!-- Header Section  -->
+    <header class="header-section">
+        <div class="logo">
+            <h1>Interactive</h1>
+            <h3>Geometry Genious</h3>
+        </div>
+        <div class="blog-button">
+            <button>Blog</button>
+        </div>
+    </header>
+
+    <!-- Cards Section  -->
+    <main class="carts-container">
+        <div class="carts" id="carts-container">
+            <!-- cart-1: Triangle -->
+            <div class="cart">
+                <img class="geometry-img" src="images/triangle.png" alt="Triangle">
+                <h2>Triangle</h2>
+                <p>Area (A) = 0.5 &#215 b &#215 h</p>
+                 <div class="inputed-data-display">
+                    b =<span>0</span><span style="margin:0;padding:0">cm</span>
+                    h =<span>0</span><span style="margin:0;padding:0">cm</span>
+                    <i id = "edit-icon" class="fa-regular fa-pen-to-square"></i>
+                 </div>
+                <input id="triangle-b-field" type="number" placeholder="b"> <span>cm</span>
+                <input id="triangle-h-field" type="number" placeholder="h"> <span>cm</span>
+                <span class="square">
+                    <i class="fa-solid fa-check"></i>
+                </span>
+                <button id="triangle-btn" class="calculate-btn">Calculate</button>
+            </div>
+
+            <!-- cart-2: Rectangle -->
+            <div class="cart">
+                <img class="geometry-img" src="images/rectangle.png" alt="Rectangle">
+                <h2>Rectangle</h2>
+                <p>Area (A) = w &#215 l</p>
+                <div class="inputed-data-display">
+                    w =<span>0</span><span style="margin:0;padding:0">cm</span>
+                    l =<span>0</span><span style="margin:0;padding:0">cm</span>
+                    <i id = "edit-icon" class="fa-regular fa-pen-to-square"></i>
+                 </div>
+                <input id="rectangle-w-field" type="number" placeholder="w"> <span>cm</span>
+                <input id="rectangle-l-field" type="number" placeholder="l"> <span>cm</span>
+                <span class="square">
+                    <i class="fa-solid fa-check"></i>
+                </span>
+                <button id="rectangle-btn" class="calculate-btn">Calculate</button>
+            </div>
+
+            <!-- cart-3: Paralellogram -->
+            <div class="cart">
+                <img class="geometry-img" src="images/parallelogram.png" alt="Paralellogram">
+                <h2>Paralellogram</h2>
+                <p>Area (A) = b &#215 h</p>
+                <div class="inputed-data-display">
+                    b =<span>0</span><span style="margin:0;padding:0">cm</span>
+                    h =<span>0</span><span style="margin:0;padding:0">cm</span>
+                    <i id = "edit-icon" class="fa-regular fa-pen-to-square"></i>
+                 </div>
+                <input id="paralellogram-b-field" type="number" placeholder="b"> <span>cm</span>
+                <input id="paralellogram-h-field" type="number" placeholder="h"> <span>cm</span>
+                <span class="square">
+                    <i class="fa-solid fa-check"></i>
+                </span>
+                <button id="peralellogram-btn" class="calculate-btn">Calculate</button>
+            </div>
+
+            <!-- cart-4: Rhombus -->
+            <div class="cart">
+                <img class="geometry-img" src="images/rhombus.png" alt="Rhombus">
+                <h2>Rhombus</h2>
+                <p>Area (A) = 0.5 &#215 d <sub>1</sub> &#215 d<sub>2</sub></p>
+                <div class="inputed-data-display">
+                    d1 =<span>0</span><span style="margin:0;padding:0">cm</span>
+                    d2 =<span>0</span><span style="margin:0;padding:0">cm</span>
+                    <i id = "edit-icon" class="fa-regular fa-pen-to-square"></i>
+                 </div>
+                <input id="rhombus-d1-field" type="number" placeholder="d1"> <span>cm</span>
+                <input id="rhombus-d2-field" type="number" placeholder="d2"> <span>cm</span>
+                <span class="square">
+                    <i class="fa-solid fa-check"></i>
+                </span>
+                <button id="rhombus-btn" class="calculate-btn">Calculate</button>
+            </div>
+
+            <!-- cart-5: Pentagon -->
+            <div class="cart">
+                <img class="geometry-img" src="images/pentagon.png" alt="Pentagon">
+                <h2>Pentagon</h2>
+                <p>Area (A) = 0.5 &#215 p &#215 b</p>
+                <div class="inputed-data-display">
+                    p =<span>0</span><span style="margin:0;padding:0">cm</span>
+                    b =<span>0</span><span style="margin:0;padding:0">cm</span>
+                    <i id = "edit-icon" class="fa-regular fa-pen-to-square"></i>
+                 </div>
+                <input id="pentagon-p-field" type="number" placeholder="p"> <span>cm</span>
+                <input id="pentagon-b-field" type="number" placeholder="b"> <span>cm</span>
+                <span class="square">
+                    <i class="fa-solid fa-check"></i>
+                </span>
+                <button id="pentagon-btn" class="calculate-btn">Calculate</button>
+            </div>
+
+            <!-- cart-6: Ellipse -->
+            <div class="cart">
+                <img class="geometry-img" src="images/ellipse.png" alt="Ellipse">
+                <h2>Ellipse</h2>
+                <p>Area (A) = &pi;ab</p>
+                <div class="inputed-data-display">
+                   a =<span>0</span><span style="margin:0;padding:0">cm</span>
+                   b =<span>0</span><span style="margin:0;padding:0">cm</span>
+                    <i id = "edit-icon" class="fa-regular fa-pen-to-square"></i>
+                 </div>
+                <input id="ellipse-a-field" type="number" placeholder="a"> <span>cm</span>
+                <input id="ellipse-b-field" type="number" placeholder="b"> <span>cm</span>
+                <span class="square">
+                    <i class="fa-solid fa-check"></i>
+                </span>
+                <button id="ellipse-btn" class="calculate-btn">Calculate</button>
+            </div>
+        </div>
+<!-- Display calculation  -->
+        <div class="cart area-calculation">
+            <h3 class="area-heading">Area Calulation</h3>
+            <table>
+                <tbody id="tBody">
+                    <!-- Row will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <!-- Custom Popup Box -->
+    <!-- <div class="wrapper" id="alert-box">
+        <div class="popup">
+            <div class="buttons-container" id ='buttons'>
+            <button>Yes</button>
+            <button>No</button>
+            </div>
+        </div>
+    </div> -->
+    <script src="js/main.js"></script>
+</body>
+</html>
